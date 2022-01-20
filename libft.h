@@ -6,7 +6,7 @@
 /*   By: lsidan <lsidan@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 11:19:32 by lsidan            #+#    #+#             */
-/*   Updated: 2022/01/16 08:52:57 by lsidan           ###   ########.fr       */
+/*   Updated: 2022/01/20 15:13:26 by lsidan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include "ft_printf/include/ft_printf.h"
+# include "ft_gnl/get_next_line.h"
 
 typedef struct s_list
 {

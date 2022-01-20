@@ -49,13 +49,15 @@ SRCS	= 	ft_char_str/ft_atoi.c \
 			ft_lst/ft_lstdelone.c \
 			ft_lst/ft_lstclear.c \
 			ft_lst/ft_lstiter.c \
-			ft_lst/ft_lstmap.c
+			ft_lst/ft_lstmap.c \
+			ft_gnl/get_next_line.c \
+			ft_gnl/get_next_line_utils.c
 
 OBJS	= ${SRCS:.c=.o}
 
 RM		= rm -f
 
-%.o:	%.c libft.h Makefile ft_printf/include/ft_printf.h
+%.o:	%.c libft.h Makefile ft_printf/include/ft_printf.h ft_gnl/get_next_line.h
 		$(CC) $(CFLAGS) -c $< -o $@
 		@printf	"\033[2K\r\033[0;33m[BUILD - $(NAME)]\033[0m $<\e[0m"
 
